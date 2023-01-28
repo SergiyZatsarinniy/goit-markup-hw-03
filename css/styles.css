@@ -10,6 +10,8 @@
 
   --main-bg-color: #ffffff;
   --border-bg-color: #2e2f42;
+  --Our-team-section-bg-color: #f4f4fd;
+  --team-card-bg-color: #ffffff;
 }
 
 body {
@@ -134,11 +136,11 @@ body {
 }
 
 .our-team-cards-section {
-  background-color: var(--team-bg-color);
+  background-color: var(--Our-team-section-bg-color);
 }
 
 .our-team-card {
-  background-color: var(--light-color);
+  background-color: var(--team-card-bg-color);
   cursor: pointer;
 }
 
