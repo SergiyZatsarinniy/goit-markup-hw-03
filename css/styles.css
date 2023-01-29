@@ -14,11 +14,44 @@
   --team-card-bg-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: var(--primary-text-color);
   background-color: var(--main-bg-color);
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .link {
@@ -27,6 +60,32 @@ body {
 
 .list {
   list-style: none;
+}
+
+/* HEADER */
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .menu-link {
@@ -41,12 +100,17 @@ body {
   color: var(--action-color);
 }
 
+.address {
+  display: flex;
+}
+
 .contact-phone-number {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  margin-left: 40px;
 }
 
 .contact-phone-number:hover,
@@ -76,15 +140,14 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .logo-header {
   color: var(--primary-text-color);
 }
 
-.logo-footer {
-  color: var(--light-color);
-}
+/* MAIN STUDIO */
 
 .button-studio {
   font-family: inherit;
@@ -115,6 +178,10 @@ body {
   letter-spacing: 0.02em;
 }
 
+.our-advantages-section {
+  padding-top: 120px;
+}
+
 .our-advantages-section-titles {
   font-size: 20px;
   font-weight: 500;
@@ -133,15 +200,23 @@ body {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
 }
 
 .our-team-cards-section {
   background-color: var(--Our-team-section-bg-color);
 }
 
+.employees {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
 .our-team-card {
   background-color: var(--team-card-bg-color);
   cursor: pointer;
+  flex-basis: calc((100% -72px) / 4);
 }
 
 .our-team-section-title {
@@ -149,6 +224,7 @@ body {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
 }
 
 .our-team-card-title {
@@ -162,8 +238,14 @@ body {
   line-height: 1.5;
 }
 
-.footer {
+/* FOOTER */
+
+.footer-bg {
   background-color: var(--border-bg-color);
+}
+
+.logo-footer {
+  color: var(--light-color);
 }
 
 .footer-text {
@@ -171,6 +253,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+/* MAIN PORTFOLIO */
 
 .btn-portfolio {
   background-color: var(--light-color);
@@ -190,6 +274,17 @@ body {
 .btn-portfolio:focus {
   background-color: var(--pressed-state-color);
   color: var(--third-text-color);
+}
+
+.project-cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  column-gap: 48px;
+}
+
+.project-card {
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .project-card-title {
