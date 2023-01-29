@@ -47,7 +47,7 @@ body {
 }
 
 .container {
-  width: 1128px;
+  width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -216,7 +216,7 @@ body {
 .our-team-card {
   background-color: var(--team-card-bg-color);
   cursor: pointer;
-  flex-basis: calc((100% -72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .our-team-section-title {
@@ -279,8 +279,8 @@ body {
 .project-cards-section {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 24px;
-  column-gap: 48px;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 
 .project-card {
