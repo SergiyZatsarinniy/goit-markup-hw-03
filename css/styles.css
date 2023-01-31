@@ -1,17 +1,18 @@
 :root {
   --logo-font: 'Raleway', sans-serif;
   --action-color: #4d5ae5;
+  --accent-color: #e7e9fc;
   --pressed-state-color: #404bbf;
   --primary-text-color: #2e2f42;
   --secondary-text-color: #434455;
-  --accent-color: #e7e9fc;
-  --light-color: #f4f4fd;
   --third-text-color: #ffffff;
+  --light-color: #f4f4fd;
 
   --main-bg-color: #ffffff;
   --border-bg-color: #2e2f42;
   --Our-team-section-bg-color: #f4f4fd;
   --team-card-bg-color: #ffffff;
+  --border-color: #e7e9fc;
 }
 
 h1,
@@ -67,18 +68,15 @@ body {
 /* HEADER */
 
 .border-style {
-  border-bottom: 1px solid #e7e9fc;
-}
-
-.page-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .page-header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .page-nav {
@@ -109,6 +107,7 @@ body {
 
 .address {
   display: flex;
+  gap: 40px;
 }
 
 .contact-phone-number {
@@ -117,7 +116,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  margin-left: 40px;
 }
 
 .contact-phone-number:hover,
@@ -162,6 +160,8 @@ body {
 }
 
 .main-title {
+  margin: 0 auto;
+  width: 496px;
   text-align: center;
   color: var(--third-text-color);
   font-size: 56px;
@@ -359,7 +359,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--border-color);
 }
 
 .project-card-title {
