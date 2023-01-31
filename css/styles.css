@@ -198,10 +198,6 @@ body {
   background-color: var(--border-bg-color);
 }
 
-.our-advantages-section {
-  padding-top: 120px;
-}
-
 .list-of-benefits {
   display: flex;
   gap: 24px;
@@ -225,6 +221,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+}
+.What-Are-We-Doing-section {
+  padding-bottom: 120px;
 }
 
 .what-are-we-doing-section-title {
@@ -257,7 +256,6 @@ body {
 
 .our-team-card {
   background-color: var(--team-card-bg-color);
-  cursor: pointer;
   flex-basis: calc((100% - 72px) / 4);
 }
 
