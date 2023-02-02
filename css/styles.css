@@ -337,6 +337,7 @@ body {
 .btn-portfolio:focus {
   background-color: var(--pressed-state-color);
   color: var(--third-text-color);
+  border-color: transparent;
 }
 
 .buttons {
